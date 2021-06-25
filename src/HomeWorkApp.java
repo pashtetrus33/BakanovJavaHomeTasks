@@ -18,10 +18,11 @@ public class HomeWorkApp {
     public static void checkSumSign() {
         int a = -7;
         int b = -4;
-        if((a + b) >= 0) {
-            System.out.println("Сумма положительная и равна: " + (a+b));
+        int sum = a + b;
+        if((sum) >= 0) {
+            System.out.println("Сумма положительная и равна: " + sum);
         } else {
-            System.out.println("Сумма отрицательная и равна: " + (a+b));
+            System.out.println("Сумма отрицательная и равна: " + sum);
         }
     }
 

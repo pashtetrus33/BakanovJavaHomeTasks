@@ -7,14 +7,14 @@ public class StaffMember {
     private float salary;
     private int age;
 
-   /* public StaffMember () {
+    public StaffMember () {
         this.fullName = "Иванов Иван Иванович";
         this.position = "инженер";
         this.email = "ivanov@company.com";
         this.phone = "+79601235678";
         this.salary = 45000.00f;
-        this.age = 35;
-    }*/
+        this.age = 45;
+    }
 
     public StaffMember (String fullName, String position, String email, String phone, float salary, int age) {
         this.fullName = fullName;

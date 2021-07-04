@@ -11,7 +11,7 @@ public class HomeWorkApp {
             employeesArray[2] = new StaffMember("Petrov Semen", "Chief Accounting Officer", "petrovs@company.com", "+79602223366", 10000000, 35);
             employeesArray[3] = new StaffMember("Romanova Mariia", "Developer", "romanovam@company.com", "+79602223377", 15000000, 30);
             employeesArray[4] = new StaffMember("Sokolova Anna", "Engineer", "sokolovaa@company.com", "+79602223388", 9000000, 41);
-            // Написал стандартный цикл for по элементам массива employeesArray, но среда разработки упростила цикл, я согласился :)
+            // Написал стандартный цикл for по элементам массива employeesArray, но среда разработки упростила цикл до for each, я согласился :)
             for (StaffMember staffMember : employeesArray) {
                 if (staffMember.getAge() > 40) {
                     staffMember.info();

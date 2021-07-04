@@ -1,22 +1,25 @@
+package com.bakanov.javahometasks;
+
 public class StaffMember {
 
     private String fullName;
     private String position;
     private String email;
     private String phone;
-    private float salary;
+    private long salary;
     private int age;
+
 
     public StaffMember () {
         this.fullName = "Иванов Иван Иванович";
-        this.position = "инженер";
+        this.position = "  ";
         this.email = "ivanov@company.com";
         this.phone = "+79601235678";
-        this.salary = 45000.00f;
+        this.salary = 4500000;
         this.age = 45;
     }
 
-    public StaffMember (String fullName, String position, String email, String phone, float salary, int age) {
+    public StaffMember (String fullName, String position, String email, String phone, long salary, int age) {
         this.fullName = fullName;
         this.position = position;
         this.email = email;
@@ -29,12 +32,19 @@ public class StaffMember {
         return age;
     }
 
+    public void setSalary(long value){
+        this.salary = value;
+    }
+    public double getSalary() {
+        return salary/100f;
+    }
+
     public void info() {
         System.out.println ("ФИО: " + fullName);
         System.out.println ("Должность: " + position);
         System.out.println ("Email: " + email);
         System.out.println ("Телефон: " + phone);
-        System.out.println ("Зарплата: " + salary);
-        System.out.println ("Возраст: " + age + "лет");
+        System.out.println ("Зарплата: " + getSalary() + " рублей");
+        System.out.println ("Возраст: " + getAge());
     }
 }

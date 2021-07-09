@@ -3,6 +3,7 @@ public class Animal {
     String color;
     String type;
     static int count;
+    int maxRun;
 
     public Animal () {
         count++;
@@ -22,9 +23,14 @@ public class Animal {
     }
 
     public void run(int length) {
-        System.out.println(type +" " + name + " пробежал(а) " + length + " м.");
+        if (length <= maxRun) {
+            System.out.println(type +" " + name + " пробежал(а) " + length + " м.");
+        }
+        else {
+            System.out.println("Собака " + name + " не побежал(а). Ограничение на забег: " + length + " > " + maxRun + " . ");
+        }
+
 
     }
-
 
 }

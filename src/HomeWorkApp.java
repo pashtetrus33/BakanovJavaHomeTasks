@@ -13,7 +13,6 @@ public class HomeWorkApp {
         plate.info();
         for (Cat cat : cats) {
             cat.eat(plate);
-            cat.isFed();
         }
         plate.info();
         plate.addFood(50);

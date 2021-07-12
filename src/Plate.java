@@ -3,17 +3,15 @@ public class Plate {
     public Plate(int food) {
         this.food = food;
     }
-    public boolean isEnoughFood( int n) {
-        return food >= n;
-    }
+
     public void decreaseFood(int n) {
        food -= n;
-
+        System.out.println("Из миски съели " + n + " , стало: " + food);
 
     }
     public void addFood(int n) {
         food +=n;
-        System.out.println("Добавили " + n + " в миску, стало: " + food);
+        System.out.println("В миску добавили " + n + " , стало: " + food);
     }
     public int getFood() {
         return food;

@@ -28,10 +28,14 @@ public class CounterApp extends JFrame{
         incrementButton.setFont(font);
         add(incrementButton, BorderLayout.EAST);
 
+        // IDEA подсказала, что можно заменить ляммбдой
+
         decrementButton.addActionListener(actionEvent -> {
             value--;
             counterValueView.setText(String.valueOf(value));
         });
+
+        // IDEA подсказала, что можно заменить ляммбдой
 
         incrementButton.addActionListener(actionEvent -> {
             value++;
